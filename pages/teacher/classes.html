@@ -1,0 +1,15 @@
+<div ng-controller="classController">
+  <h4>Classes</h4>
+  <div ng-init="fetchClasses()" class="col-md-5">
+    <div class="row" ng-repeat="class in classes">
+      <strong>Class Name: </strong> {{class.name}}<br>
+      <strong>Class type: </strong> {{class.type}}<br>
+      <strong>Class day: </strong> {{class.day}}<br>
+      <strong>Class time: </strong> {{class.time}}<br>
+      <strong>Class location: </strong> {{class.location}}<br>
+      <a ui-sref="classes.student({ id: class.id })"><button class="btn btn-primary ">View Students</button></a>
+      <hr>
+    </div>
+  </div>
+  <div class="col-md-5" ui-view></div>
+</div>
