@@ -2,7 +2,7 @@ body{
   background: #fff;font-family: lig;
 }
 .navbar-wrapper{
-  background-color: #fff;background-color: rgba(102,204,204,1);color: #fff;
+  background-color: rgba(102,204,204,1);color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a{
@@ -13,6 +13,9 @@ body{
 }
 .jumbotron{
   background: url('../images/Success.jpg');background-size: 100% 100%;height: 400px;
+}
+.jum{
+  margin: 20px;
 }
 .box{
   border: 1px solid rgb(102,204,204);min-height: 50px;border-radius: 8px 8px;background-color: #fff; margin-bottom: 10px;
@@ -27,7 +30,22 @@ a{
   min-height: 200px;
 }
 .one{
-  margin-top: 30px;background-color: #eee;padding: 60px; 
+  padding-top: 30px;background-color: #eee;padding: 60px; 
+}
+.two{
+  padding-top: 30px;background-color: #fff;padding: 60px; font-size: 20px;
+}
+.three{
+  background-color: #eee;background: url("../images/bk13.jpg");background-size: 120% 120%;color: #fff;background-attachment: fixed;text-align: center;
+}
+.teacher-show:hover{
+  cursor: pointer; color:#666;
+}
+.img-cover{
+  background-color: rgba(44, 62, 80,0);position: absolute;height: 100%;width: 100%;
+}
+.boxes{
+  margin-right: 20px;margin-top: 10px;border: 1px dotted rgb(25, 181, 254);
 }
 footer{
   background-color: #222;padding: 10px;color:#333;position: ;bottom: 0px;width: 100%;
@@ -39,3 +57,4 @@ footer i:hover{
   background-color: rgb(102,204,204);cursor: pointer;color: #fff
 }
 @font-face{ src: url('../dependencies/fonts/Lato-Lig.ttf');font-family: 'lig'}
+@font-face{ src: url('../dependencies/fonts/Stainy.ttf');font-family: 'sig'}

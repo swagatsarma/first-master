@@ -1,7 +1,27 @@
-function showModal(){
-  $('#myModal').modal();
-}
 
+$(document).ready(function(){
+  $(".teacher-login").hide();
+  $(".teacher-signup").hide();
+})
+function showModal(x){
+  $('#'+x).modal();
+}
+function showTeacherLogin(){
+  $(".student-login").hide();
+  $(".teacher-login").show();
+}
+function showStudentLogin(){
+  $(".teacher-login").hide();
+  $(".student-login").show();
+}
+function showTeacherSignUp(){
+  $(".student-signup").hide();
+  $(".teacher-signup").show();
+}
+function showStudentSignUp(){
+  $(".teacher-signup").hide();
+  $(".student-signup").show();
+}
 function teacherSignUp(){
   teacherSignupForm = ["teacher_firstname", "teacher_lastname", "teacher_email", "teacher_password", "teacher_mobile", "teacher_addressline1", "teacher_addressline2", "teacher_gender", "teacher_education", "teacher_college", "teacher_working", "teacher_organization", "teacher_experience", "teacher_designation", "teacher_description"];
   var flag = 0;
