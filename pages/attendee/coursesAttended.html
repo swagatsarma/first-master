@@ -1,0 +1,24 @@
+<div clas="container" ng-controller="allCoursesController">
+  <div ng-repeat="course in courses" class="see-more-parent col-md-12">  
+    <div class="col-md-2"></div>
+    <div class="see-course col-md-8" ng-click="seeMoreFunction($index)">
+      <div class="col-md-3"><h4><i class="fa fa-paper-plane"></i> Introduction to R</h4></div>
+      <div class="col-md-2"><h5><i class="fa fa-location-arrow"></i> Bangalore </h5></div>
+      <div class="col-md-2"><h5><i class="fa fa-institution"></i> Swagat Sarma</h5></div>
+      <div class="col-md-2"><h5><i class="fa fa-inr"></i> 540/-</h5></div>
+      <div class="col-md-2"><button class="btn btn-danger btn-block">View Course</button></div>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-12"  ng-show="seeMore[$index]">
+      <div class="col-md-2" ng-show="seeMore[$index]"></div>
+      <div class="see-more-course col-md-8" ng-show="seeMore[$index]">
+        <div class="col-md-3"><h5><i class="fa fa-paper-plane"></i> Gaurav Sarma</h5></div>
+        <div class="col-md-3"><h5><i class="fa fa-phone"></i> 9435137942 </h5></div>
+        <div class="col-md-3"><h5><i class="fa fa-institution"></i> Enrolled in 27-02-2015</h5></div>
+        <div class="col-md-3"><a ui-sref="courseProfile({id: 2})"><button class="btn btn-danger btn-block light-blue">Course Content</button></a></div>
+      </div>
+      <div class="col-md-2" ng-show="seeMore[$index]"></div>
+    </div>
+  </div>
+    
+</div>

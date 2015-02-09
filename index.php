@@ -1,4 +1,4 @@
-  <html>
+<html>
 <head>
   <link rel="stylesheet" type="text/css" href="./dependencies/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./dependencies/css/font-awesome.css">

@@ -1,6 +1,6 @@
-var masterJi = angular.module("masterJi",['ui.router', 'angular-datepicker']);
+var masterJiTeacherTeacher = angular.module("masterJiTeacher",['ui.router', 'angular-datepicker']);
 
-masterJi.config(function($stateProvider, $urlRouterProvider) {
+masterJiTeacher.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('classes', {
         url: '/classes',
@@ -19,7 +19,7 @@ masterJi.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/classes');
 })
 
-masterJi.controller('newController',function($scope, $http){
+masterJiTeacher.controller('newController',function($scope, $http){
     $scope.newClassForm = { name: '', type: '', day: '', time: '', location: ''};
 
     $scope.newClassFormSubmit = function(){
@@ -39,7 +39,7 @@ masterJi.controller('newController',function($scope, $http){
     }
 })
 
-masterJi.controller('classController', function($scope, $http){
+masterJiTeacher.controller('classController', function($scope, $http){
   $scope.fetchClasses = function(){
     $http.get("../../ajax/teacher_classes.php").success(function(response){
       $scope.classes = response; 

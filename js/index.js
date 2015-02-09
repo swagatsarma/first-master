@@ -22,6 +22,9 @@ function showStudentSignUp(){
   $(".teacher-signup").hide();
   $(".student-signup").show();
 }
+function studentLogin(){
+  window.location.href = "./pages/attendee/index.php";
+}
 function teacherSignUp(){
   teacherSignupForm = ["teacher_firstname", "teacher_lastname", "teacher_email", "teacher_password", "teacher_mobile", "teacher_addressline1", "teacher_addressline2", "teacher_gender", "teacher_education", "teacher_college", "teacher_working", "teacher_organization", "teacher_experience", "teacher_designation", "teacher_description"];
   var flag = 0;

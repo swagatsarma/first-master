@@ -17,7 +17,7 @@ else{
   <script type="text/javascript" src="../../bower_components/angular-native-picker/build/angular-datepicker.js"></script>
   <script type="text/javascript" src="../../js/teacher/teacher-index.js"></script>
 </head>
-<body ng-app="masterJi">
+<body ng-app="masterJiTeacher">
   <a ui-sref="new"><button class="btn btn-success">New Class</button></a>
   <a ui-sref="classes"><button class="btn btn-success">View Classes</button></a>
   <div ui-view></div>
